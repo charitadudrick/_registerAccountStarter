@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Registration Success</title>
+    <link rel="stylesheet" type="text/css" href="register.css">
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+"use strict";
+
+$(document).ready(() => {
+    const params = new URLSearchParams(window.location.search);
+
+    $("#email_out").text(params.get("email_address"));
+    $("#phone_out").text(params.get("phone"));
+    $("#country_out").text(params.get("country"));
+    $("#contact_out").text(params.get("contact"));
+});
+</script>
+
+<body>
+<main class="calculator-card">
+    <h1>Registration Complete</h1> 
+    
+    <div id="result" ">
+        <h4>Congratulations!</h4>
+        <p>Your account registration has been submitted successfully.</p>
+        <p>You'll receive an email shortly with more information. Welcome aboard!</p>
+    </div>
+    <p>Email: <span id="email_out"></span></p>
+<p>Phone: <span id="phone_out"></span></p>
+<p>Country: <span id="country_out"></span></p>
+<p>Contact Method: <span id="contact_out"></span></p>
+
+    <div class="button-group">
+        <button type="button" onclick="window.location.href='index.html';">
+            Return to Home
+        </button>
+    </div>
+
+    <hr>
+    <p class="footer-text">Account Services Department</p>
+    <a href="https://your-github-account/_formsApps" class="back-menu">Back to main menu</a>
+</main>
+</body>
+</html>

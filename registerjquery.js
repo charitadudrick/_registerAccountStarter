@@ -66,9 +66,10 @@ $(document).ready(() => {
         }
 
         // Output email if everything is valid
-        if (isValid) {
-            $("#form_output").append(`<p>Email: ${email}</p>`);
-        }
+      if (isValid) {
+    $("#registration_form").submit();
+}
+
     };
 
     const resetForm = () => {
