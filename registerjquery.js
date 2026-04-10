@@ -67,7 +67,12 @@ $(document).ready(() => {
 
         // Output email if everything is valid
       if (isValid) {
-    $("#registration_form").submit();
+    window.open(
+    "register_account.html" + window.location.search,
+    "RegistrationSuccess",
+    "width=450,height=350,left=400,top=200"
+);
+
 }
 
     };
