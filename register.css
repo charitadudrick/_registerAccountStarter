@@ -146,5 +146,10 @@ hr {
     color: #3498db;
     font-weight: 500;
 }
+.calculator-card {
+    width: 350px;
+    margin: 20px auto;
+    padding: 20px;
+}
 
 .back-menu:hover { text-decoration: underline; }
