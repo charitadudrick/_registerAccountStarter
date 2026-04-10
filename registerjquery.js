@@ -69,10 +69,12 @@ $(document).ready(() => {
       if (isValid) {
         const query = $("#registration_form").serialize();
     window.open(
-    "register_account.html" + window.location.search,
+    "register_account.html?" + query,
     "RegistrationSuccess",
     "width=450,height=350,left=400,top=200"
 );
+
+
 
 }
 
