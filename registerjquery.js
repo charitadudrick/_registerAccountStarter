@@ -67,6 +67,7 @@ $(document).ready(() => {
 
         // Output email if everything is valid
       if (isValid) {
+        const query = $("#registration_form").serialize();
     window.open(
     "register_account.html" + window.location.search,
     "RegistrationSuccess",
